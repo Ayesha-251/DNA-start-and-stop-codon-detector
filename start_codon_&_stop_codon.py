@@ -1,4 +1,3 @@
-
 #Determining the start codon and the stop codon present in the given DNA Sequence
 DNA=input("Enter the DNA Sequence: ").upper().strip()
 start_codon=["ATG"]
