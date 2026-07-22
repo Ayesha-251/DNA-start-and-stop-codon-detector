@@ -8,9 +8,13 @@ DNA sequence from user.
 On terminal
          Enter the DNA Sequence: 
 OUTPUT:
-If DNA sequence is not in proper codon form: 
+If DNA seuence contains nucleotides other than "A", "T", "G", "C":
+On terminal:
+       Enter the DNA Sequence: ags
+Invalid DNA sequence
+       If DNA sequence is not in proper codon form: 
 On terminal
-        WARNING!!!, DNA SEQUENCE LENGTH IS NOT IN PROPER CODON LENGTH
+       WARNING!!!, DNA SEQUENCE LENGTH IS NOT IN PROPER CODON LENGTH
 If DNA contains a start codon:
 On terminal:
       Enter the DNA Sequence: atgaac 
@@ -29,7 +33,9 @@ No stop codon found:
 On terminal:
       No stop codon found
 CODE WORKING:
-The code takes DNA sequence from the user and make it in Upper case and remove all the white spaces.
+The code takes DNA sequence from the user and convert it in Uppercase and remove all the white spaces.
+The code checks for the validity of the nucleotides inserted by the user.
+If the input contains the nucleotides other than "A", "T", "G", "C". It terminates the program
 The code checks for the DNA sequence length to determine if proper codons can be formed.
 If the DNA sequence length is not divisible by 3 warning and does not perform codon determination analysis.
 If formed it checks for the codons from the flag variable and shows the exact location of the start codon and stop codon.
